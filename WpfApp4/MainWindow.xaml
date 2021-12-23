@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:WpfApp4"
+mc:Ignorable="d"
+Background="CornflowerBlue"
+
+    Title="Дневник практики." Height="766.5" Width="1328">
+    <Grid>
+
+        <Label Content="ФИО:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Группа:" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Возраст:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <Grid >
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Button" Content="Отобразить данные." Margin="10,99,0,0" Click="Button_Click" Height="42" Width="117" RenderTransformOrigin="-2.287,0.541" />
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Button1" Content="Изменить данные." Margin="0,99,10,0" Click="Button1_Click" Height="42" Width="117" RenderTransformOrigin="-2.287,0.541" />
+            <TextBox HorizontalAlignment="Left" x:Name="Group" Height="23" Margin="96,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="549" />
+            <TextBox HorizontalAlignment="Left" x:Name="Fio" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" />
+            <TextBox HorizontalAlignment="Left" x:Name="Age" Height="23" Margin="96,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="549" />
+
+            <Label Content="ФИО:" HorizontalAlignment="Left" Margin="665,7,0,0" VerticalAlignment="Top"/>
+            <Label Content="Группа:" HorizontalAlignment="Left" Margin="665,35,0,0" VerticalAlignment="Top"/>
+            <Label Content="Возраст:" HorizontalAlignment="Left" Margin="665,63,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" x:Name="Fio_Copy" Height="23" Margin="758,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" />
+            <TextBox HorizontalAlignment="Left" x:Name="Age_Copy" Height="23" Margin="758,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" />
+            <TextBox HorizontalAlignment="Left" x:Name="Group_Copy" Height="23" Margin="758,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" />
+
+            <TextBox HorizontalAlignment="Left" x:Name="Spisok" Height="532" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" />
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Button2" Content="Добавить данные." Margin="0,297,526,0" Click="Button2_Click" Height="42" Width="117" RenderTransformOrigin="-2.287,0.541" />
+            <TextBox HorizontalAlignment="Left" x:Name="Data" Height="23" Margin="758,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <TextBox HorizontalAlignment="Left" x:Name="Zadanie" Height="23" Margin="758,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <TextBox HorizontalAlignment="Left" x:Name="Ocenka" Height="23" Margin="758,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" />
+            <Label Content="Дата:" HorizontalAlignment="Left" Margin="686,157,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.974,0.019"/>
+            <Label Content="Оценка:" HorizontalAlignment="Left" Margin="686,249,0,0" VerticalAlignment="Top"/>
+            <Label Content="Задание:" HorizontalAlignment="Left" Margin="686,202,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.192,4.577"/>
+
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Button3" Content="Обновить данные таблицы." Margin="0,650,491,0" Click="Button3_Click" Height="42" Width="164" RenderTransformOrigin="-2.287,0.541" />
+
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Button4" Content="Изменить данные по дате." Margin="0,297,329,0" Click="Button4_Click" Height="42" Width="150" RenderTransformOrigin="-2.287,0.541" />
+
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Button5" Content="Удалить данные по дате." Margin="0,297,134,0" />
+
+            
+
+
+        </Grid>
+    </Grid>
+</Window>
+
